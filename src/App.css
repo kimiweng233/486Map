@@ -1,7 +1,12 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   position: absolute;
   left: 20px;
-  bottom: 20px;
+  bottom: 10px;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -20,4 +25,34 @@
   box-shadow: inset 0px 0px 2px 2px rgb(58, 62, 70);
   border: none;
   margin: 4px 20px 0px 5px;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 1000;
+  background-color: aliceblue;
+  height: 30px;
+  padding: 0px 10px 3px 10px;
+  border-radius: 10px;
+  border: 2px solid gray;
+  border-style: outset;
+}
+
+.greenBox {
+  width: 10px;
+  height: 10px;
+  background: rgb(43, 180, 43);
+  margin: 2px 5px 0px 5px;
+}
+
+.redBox {
+  width: 10px;
+  height: 10px;
+  background: rgb(197, 76, 76);
+  margin: 2px 0px 0px 5px;
 }

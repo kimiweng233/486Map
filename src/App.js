@@ -94,6 +94,12 @@ function App() {
         />
         <p>score: {riskScore}</p>
       </div>
+      <div className="infoContainer">
+        <p>*Risk level goes from 1</p>
+        <div className="greenBox" />
+        <p>to 3</p>
+        <div className="redBox" />
+      </div>
     </div>
   );
 }
