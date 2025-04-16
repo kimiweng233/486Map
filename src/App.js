@@ -72,6 +72,7 @@ function App() {
         minZoom={5}
         style={{ height: "100vh" }}
         maxBounds={bounds}
+        zoomControl={false}
         ref={setMap}
       >
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
