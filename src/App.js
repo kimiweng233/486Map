@@ -5,6 +5,9 @@ import "leaflet-boundary-canvas";
 import "leaflet/dist/leaflet.css";
 import "./App.css";
 
+import zipcodeData from "./out.json";
+import scores from "./scores.csv";
+
 const CHROMA_SCALE = chroma.scale(["green", "yellow", "red"]);
 
 function isAllDigits(str) {
@@ -13,7 +16,6 @@ function isAllDigits(str) {
 
 function App() {
   const [map, setMap] = useState(null);
-  const [zipcodeData, setZipcodeData] = useState(null);
   const [riskScore, setRiskScore] = useState("N/A");
   const [zipcodeInput, setZipCodeInput] = useState("");
   const [riskScores, setRiskScores] = useState({});
@@ -41,14 +43,7 @@ function App() {
   };
 
   useEffect(() => {
-    fetch("/out.json")
-      .then((response) => {
-        return response.json();
-      })
-      .then((jsonData) => {
-        setZipcodeData(jsonData);
-      });
-    fetch("/scores.csv")
+    fetch(scores)
       .then((response) => {
         return response.text();
       })
