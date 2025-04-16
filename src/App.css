@@ -1,0 +1,23 @@
+.container {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.inputBox {
+  padding: 0;
+  margin: 0;
+  line-height: 28px;
+  height: 30px;
+  font-size: medium;
+  border-radius: 10px;
+  text-align: center;
+  width: 60px;
+  background-color: rgb(223, 236, 241);
+  box-shadow: inset 0px 0px 2px 2px rgb(58, 62, 70);
+  border: none;
+  margin: 4px 20px 0px 5px;
+}
